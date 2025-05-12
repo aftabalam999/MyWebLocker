@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+}
+
+#page{
+    width: 300px;
+    height: auto;
+    background-color: white;
+    box-shadow: 0px 0px 10px #ccc;
+    border-radius: 15px;
+    padding: 50px 25px;
+}
+
+#signup{
+    display: none;
+}
+
+#login h1,#signup h1{
+    font-family: "Ubuntu", serif;
+}
+
+#login_email,#login_password,#username,#email,#phone,#password{
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    padding-left: 3px;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 16px;
+    outline: none;
+    color: #727272;
+}
+
+#login_frm{
+    margin-top: 30px;
+    font-family: "Ubuntu", serif;
+}
+
+#login_btn,#signup_btn{
+    width: 100%;
+    height: 40px;
+    border: none;
+    font-size: 18px;
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+    color: rgb(49, 61, 61);
+    font-family: "Ubuntu", serif;
+    outline: none;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+#login p{
+    font-family:"Ubuntu", serif;
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+#signup p{
+    font-family:"Ubuntu", serif;
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+#signup span{
+    color: blue;
+    cursor: pointer;
+}
+
+#login span{
+    color: blue;
+    cursor: pointer;
+}
+
+#email_notice,#login_email_warning,#login_password_warning{
+    color: red;
+    font-family: "Ubuntu", serif;
+    margin-top: 3px;
+    display: none;
+}

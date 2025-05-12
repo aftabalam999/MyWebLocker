@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <div id="profile_box">
+        <div id="profile_pic">
+
+        </div>
+    </div>
+
+    <i class="fas fa-plus-circle" id="new_contact"></i>
+
+    <div id="main_all_contact_box">
+        <div id="contact_header">
+            <h1><i class="fas fa-user-circle"></i> All Contacts</h1>
+            <input type="search" placeholder="Search Your Contact Here..." id="search">
+        </div>
+        <div id="all_contact_box">
+            
+        </div>
+    </div>
+
+
+
+    <!--Start Add new contact Coding -->
+    <!-- this code should be bottom of the all over code -->
+     <div id="contact_bg" class="animate__animated animate__fadeIn">
+        <center>
+            <div id="add_contact_box" class="animate__animated animate__slideInDown">
+                <h1 id="c_heading">Add New Contact</h1>
+                <p id="w_msg">Enter name and phone no.</p>
+                <form id="c_form">
+                    <input type="text" id="c_name" placeholder="Enter Name" required="required">
+                    <input type="number" id="c_num" placeholder="Enter Mobile No." required="required">
+                    <button type="submit" id="add">Add</button>
+                    <button type="button" id="close">Close</button>
+                </form>
+            </div>   
+        </center>
+     </div>
+     <!--End Add new contact Coding -->
+    <!-- this code should be bottom of the all over code -->
+    <script src="js/contact.js"></script>
+</body>
+</html>

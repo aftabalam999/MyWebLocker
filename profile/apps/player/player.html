@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player</title>
+    <link rel="stylesheet" href="css/player.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <div id="left">
+        <video  width="100%" height="520px" id="video_player">
+            <source id="video_src" src="https://media.istockphoto.com/id/1872123406/video/woman-hands-on-the-background-of-developing-ribbons-from-the-wind-arm-gestures-of-victory-or.mp4?s=mp4-640x640-is&k=20&c=3sZ5LWNTAzgd2nb9riC_ZnShcjuH7qUC9uKP-jjVMz0="></source>
+        </video>
+        <div id="progress_box">
+            <div id="progress_bar"></div>
+        </div>
+        <div id="control">
+            <div id="timing">
+                <p id="v_timing">00:00/00:00</p>
+            </div>
+            <div id="play_tools">
+                <i class="fa-solid fa-angles-left" id="left_btn"></i>
+                <i class="fas fa-play-circle" id="play_btn"></i>
+                <i class="fa-solid fa-angles-right" id="right_btn"></i>
+            </div>
+            <div id="other_tools">
+                <div id="vol_box">
+                    <input type="range" id="vol_control" min="0" max="1" step="0.01" value="1" style="display: none;">
+                <i class="fas fa-volume-up" id="volume"></i>
+                </div>
+
+                <div id="speed_box">
+                    <input type="range" id="speed_control" min="0" max="2" step="0.25"  style="display: none;">
+                    <i class="fa-solid fa-gauge-high" style="color:white;" id="speed_icon"></i>
+                </div>
+
+                <i class="fas fa-expand" id="full_screen"></i>
+            </div>
+        </div>
+    </div>
+    <div id="right">
+        <div id="top">
+            <h3>Playlist</h3>
+            <input type="search" id="search" placeholder="Search Your Video Here...">
+            <i class="fa-solid fa-circle-plus" id="open_video_box_btn"></i>
+            <div id="add_video_box">
+            <h2>Add Videos</h2>
+            <form>
+            <input type="text" id="video_name" placeholder="Enter Your Video Name...">
+            <input type="text" id="video_link" placeholder="Enter Your Video Link...">
+            <button type="submit" id="add_video_btn">Add Video</button>
+            </form>
+            </div>
+        </div>
+        <div id="bottom">
+            
+        </div>
+    </div>
+    
+    <script src="js/player.js"></script>
+</body>
+</html>
